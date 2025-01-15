@@ -8,7 +8,7 @@ import Bg3 from "../../assets/image/Login_bg3.png";
 import Bg4 from "../../assets/image/Login_bg4.png";
 
 const Login = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const backgroundImages = [Bg1, Bg2, Bg3, Bg4];
 
   return (
@@ -29,7 +29,7 @@ const Login = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute bottom-0 w-full px-5 pb-16 z-10">
+      <div className="absolute bottom-0 w-full px-5 pb-16 z-10 mb-[55px]">
         <button
           className="text-base leading-relaxed font-Pretendard font-bold bg-login-button w-full rounded-[27px] py-3.5 shadow-drop-shadow text-button-font"
           onClick={() => {
