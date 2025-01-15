@@ -3,13 +3,18 @@ import Check from "assets/svg/Check.svg";
 import Arrow from "assets/svg/Arrow.svg";
 import Line from "assets/svg/Line.svg";
 import Confirm from "assets/svg/Confirm.svg";
+import { useNavigate } from "react-router-dom";
 
 const Agree = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-login-button flex flex-col h-full">
       <div className="h-[44px]"></div>
       <div className="flex items-center justify-between px-4 py-4">
-        <img src={Exit} alt="Exit Icon" className="w-6 h-6" />
+        <button onClick={() => navigate("/login/auth/phone-number")}>
+          <img src={Exit} alt="Exit Icon" className="w-6 h-6" />
+        </button>
         <p className="text-center flex-grow font-bold">약관동의</p>
         <div className="w-6 h-6"></div>
       </div>

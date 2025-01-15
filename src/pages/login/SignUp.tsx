@@ -36,7 +36,9 @@ const SignUp = () => {
     <div className="bg-login-button flex flex-col h-full">
       <div className="h-[44px]"></div>
       <div className="flex items-center justify-between px-4 py-4">
-        <img src={Exit} alt="Exit Icon" className="w-6 h-6" />
+        <button onClick={() => navigate("/login/auth")}>
+          <img src={Exit} alt="Exit Icon" className="w-6 h-6" />
+        </button>
         <p className="text-center flex-grow font-bold">인증번호 입력</p>
         <div className="w-6 h-6"></div>
       </div>

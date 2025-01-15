@@ -40,7 +40,7 @@ const Login = () => {
         </button>
         <button
           className="opacity-60 text-base leading-relaxed font-Pretendard font-semibold w-full shadow-drop-shadow text-white mt-4"
-          onClick={() => navigate("")}
+          onClick={() => navigate("/feed")}
         >
           로그인 없이 둘러보기
         </button>
