@@ -27,7 +27,8 @@ const Agree = () => {
             <div className="flex items-center">
               <img src={Confirm} className="w-5 h-5" />
               <p className="pl-2">
-                <span className="text-green font-bold">(필수)</span> PLAV 서비스 이용약관
+                <span className="text-green font-bold">(필수)</span> PLAV 서비스
+                이용약관
               </p>
             </div>
             <img src={Arrow} alt="Arrow Icon" className="w-5 h-5" />
@@ -36,7 +37,8 @@ const Agree = () => {
             <div className="flex items-center">
               <img src={Confirm} className="w-5 h-5" />
               <p className="pl-2">
-                <span className="text-green font-bold">(필수)</span> PLAV 개인정보수집 및 이용동의
+                <span className="text-green font-bold">(필수)</span> PLAV
+                개인정보수집 및 이용동의
               </p>
             </div>
             <img src={Arrow} alt="Arrow Icon" className="w-5 h-5" />
@@ -45,15 +47,14 @@ const Agree = () => {
             <div className="flex items-center">
               <img src={Confirm} className="w-5 h-5" />
               <p className="pl-2">
-                <span className="agree-gray font-bold">(선택)</span> 광고/마케팅성 정보수신동의
+                <span className="agree-gray font-bold">(선택)</span>{" "}
+                광고/마케팅성 정보수신동의
               </p>
             </div>
             <img src={Arrow} alt="Arrow Icon" className="w-5 h-5" />
           </div>
           <div className="flex-grow flex items-end justify-center">
-            <button
-              className="w-full h-[54px] rounded-[8px] text-white shadow-drop-shadow font-bold mt-auto mb-10 bg-green"
-            >
+            <button className="w-full h-[54px] rounded-[8px] text-white shadow-drop-shadow font-bold mt-auto mb-40 bg-green">
               다음
             </button>
           </div>

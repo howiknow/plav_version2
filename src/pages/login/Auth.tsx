@@ -14,7 +14,9 @@ const Auth = () => {
     } else if (value.length <= 7) {
       setPhoneNumber(`${value.slice(0, 3)}-${value.slice(3)}`);
     } else {
-      setPhoneNumber(`${value.slice(0, 3)}-${value.slice(3, 7)}-${value.slice(7, 11)}`);
+      setPhoneNumber(
+        `${value.slice(0, 3)}-${value.slice(3, 7)}-${value.slice(7, 11)}`
+      );
     }
   };
 
@@ -41,8 +43,8 @@ const Auth = () => {
         </div>
         <div className="flex justify-center">
           <button
-            disabled={isButtonDisabled} 
-            className={`w-[120px] h-[54px] rounded-[60px] text-white font-bold mt-auto mb-10 ${
+            disabled={isButtonDisabled}
+            className={`w-[120px] h-[54px] rounded-[60px] text-white font-bold mt-auto mb-40 ${
               isButtonDisabled ? "bg-gray" : "bg-green"
             }`}
             onClick={() => navigate("/login/auth/phone-number")}

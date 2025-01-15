@@ -6,10 +6,9 @@ const SignUp = () => {
   const [timeLeft, setTimeLeft] = useState(180);
   const [isResendDisabled, setIsResendDisabled] = useState(true);
   const [inputValue, setInputValue] = useState("");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const isButtonDisabled = inputValue.length !== 6;
-
 
   useEffect(() => {
     if (timeLeft > 0) {
@@ -18,7 +17,7 @@ const SignUp = () => {
       }, 1000);
       return () => clearInterval(timer);
     } else {
-      setIsResendDisabled(false); 
+      setIsResendDisabled(false);
     }
   }, [timeLeft]);
 
@@ -43,12 +42,12 @@ const SignUp = () => {
       </div>
       <section className="flex flex-col justify-between h-full">
         <div className="px-4 py-5">
-        <div className="relative">
+          <div className="relative">
             <input
               type="text"
               maxLength={6}
               value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)} 
+              onChange={(e) => setInputValue(e.target.value)}
               className="w-full h-[56px] rounded-lg border border-gray px-6 pr-[80px] focus:border-green focus:outline-none font-bold"
             />
             <span className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-button font-bold">
@@ -65,9 +64,9 @@ const SignUp = () => {
           </div>
         </div>
         <div className="flex justify-center">
-        <button
-            disabled={isButtonDisabled} 
-            className={`w-[120px] h-[54px] rounded-[60px] text-white font-bold mt-auto mb-10 ${
+          <button
+            disabled={isButtonDisabled}
+            className={`w-[120px] h-[54px] rounded-[60px] text-white font-bold mt-auto mb-40 ${
               isButtonDisabled ? "bg-gray" : "bg-green"
             }`}
             onClick={() => navigate("/agree")}
