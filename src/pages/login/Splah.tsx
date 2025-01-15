@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from "../../assets/image/Plav_logo.png";
+import Logo from "../../assets/image/Logo.png";
 
 const Splash = () => {
   const navigate = useNavigate();
