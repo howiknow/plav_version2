@@ -1,6 +1,6 @@
 import Dot from "../../assets/svg/Dot.svg";
 import Bell from "../../assets/svg/Bell.svg";
-
+import DynamicButton from "../../components/DynamicButton";
 const Feed = () => {
   return (
     <div className="bg-login-button flex flex-col h-full">
@@ -16,10 +16,10 @@ const Feed = () => {
       <p className="text-splash px-4 font-bold font-size-14">
         지금 많이 검색중인 아이템
       </p>
-      <div className="pl-4 pt-2">
-        <button className="bg-button-color font-size-14 justify-center items-center text-Mono-Navy w-[53px] h-[38px] rounded-lg font-medium flex">
-          새들백
-        </button>
+      <div className="pl-4 pt-2 flex gap-2">
+        <DynamicButton text="새들백" />
+        <DynamicButton text="긴 이름의 아이템" className="" />
+        <DynamicButton text="짧은" className="" />
       </div>
     </div>
   );
