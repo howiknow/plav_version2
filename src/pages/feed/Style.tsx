@@ -4,6 +4,7 @@ import Karinna from "../../assets/image/Karina.png";
 import Home from "../../assets/svg/Home.svg";
 import Plus from "../../assets/svg/Plus.svg";
 import Profile from "../../assets/svg/Profile.svg";
+import Footer from "../../components/Footer";
 
 interface StyleImage {
   id: number;
@@ -58,32 +59,30 @@ const Style = () => {
   };
 
   return (
-    <div className="bg-login-button flex flex-col h-full">
-      <div className="h-[44px]"></div>
-      <Header leftText="Style" rightText="Feed" />
-      <p className="text-splash px-4 font-bold font-size-14">
-        지금 많이 검색중인 아이템
-      </p>
-      <div className="pt-1">
-        <SwipableDynamicButtons buttons={buttons} />
-      </div>
-      <div className="grid grid-cols-2 gap-1 px-4 pt-4">
-        {styleImages.filter((img) => img.type === "grid").map(renderImage)}
-      </div>
-      {styleImages.filter((img) => img.type === "full").map(renderImage)}
-      <div className="fixed bottom-0 left-0 right-0 border-t border-[#E5E8EB] border-[1px] max-w-[430px] mx-auto rounded-t-[24px] z-10 bg-white">
-        <div className="flex justify-between items-center px-14 pt-4 pb-4">
-          <button>
-            <img src={Home} alt="Home" />
-          </button>
-          <button>
-            <img src={Plus} alt="Add" />
-          </button>
-          <button>
-            <img src={Profile} alt="Profile" />
-          </button>
+    <div className="bg-login-button flex flex-col h-full relative">
+      <div className="overflow-y-auto pb-[80px] bg-login-button">
+        <Header leftText="Style" rightText="Feed" />
+        <p className="text-splash px-4 font-bold font-size-14">
+          지금 많이 검색중인 아이템
+        </p>
+        <div className="pt-1">
+          <SwipableDynamicButtons buttons={buttons} />
         </div>
+        <div className="grid grid-cols-2 gap-1 px-4 pt-4">
+          {Array(30)
+            .fill(null)
+            .map((_, index) => (
+              <img
+                key={index}
+                src={Karinna}
+                alt={`Style image ${index + 1}`}
+                className="w-full aspect-square object-cover"
+              />
+            ))}
+        </div>
+        <img src={Karinna} className="w-full px-3 pt-3" />
       </div>
+      <Footer />
     </div>
   );
 };
