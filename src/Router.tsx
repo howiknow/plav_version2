@@ -4,7 +4,7 @@ import Login from "./pages/login/Login";
 import Auth from "./pages/login/Auth";
 import SignUp from "pages/login/SignUp";
 import Agree from "pages/login/Agree";
-import Feed from "pages/feed/Feed";
+import Style from "pages/feed/Style";
 
 const router = createBrowserRouter([
   {
@@ -20,17 +20,17 @@ const router = createBrowserRouter([
     element: <Auth />,
   },
   {
-  path: "/login/auth/phone-number",
-  element: <SignUp />,
-},
-{
-  path: "/agree",
-  element: <Agree />,
-},
-{
-  path: "/feed",
-  element: <Feed />,
-},
+    path: "/login/auth/phone-number",
+    element: <SignUp />,
+  },
+  {
+    path: "/agree",
+    element: <Agree />,
+  },
+  {
+    path: "/style",
+    element: <Style />,
+  },
 ]);
 
 export default router;
