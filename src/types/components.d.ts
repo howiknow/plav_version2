@@ -1,4 +1,5 @@
 export interface DynamicButtonProps {
-  text: string;
+  text?: string;
+  image?: string;
   className?: string;
 }

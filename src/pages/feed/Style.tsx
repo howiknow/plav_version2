@@ -1,10 +1,8 @@
 import { SwipableDynamicButtons } from "../../components/DynamicButton";
 import Header from "components/Header";
 import Karinna from "../../assets/image/Karina.png";
-import Home from "../../assets/svg/Home.svg";
-import Plus from "../../assets/svg/Plus.svg";
-import Profile from "../../assets/svg/Profile.svg";
 import Footer from "../../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 interface StyleImage {
   id: number;
@@ -58,10 +56,18 @@ const Style = () => {
     );
   };
 
+  const navigate = useNavigate();
+
   return (
     <div className="bg-login-button flex flex-col h-full relative">
       <div className="overflow-y-auto pb-[80px] bg-login-button">
-        <Header leftText="Style" rightText="Feed" />
+        <Header
+          leftText="Style"
+          rightText="Feed"
+          activeTab="left"
+          onLeftClick={() => {}}
+          onRightClick={() => navigate("/feed")}
+        />
         <p className="text-splash px-4 font-bold font-size-14">
           지금 많이 검색중인 아이템
         </p>

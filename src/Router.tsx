@@ -5,6 +5,7 @@ import Auth from "./pages/login/Auth";
 import SignUp from "pages/login/SignUp";
 import Agree from "pages/login/Agree";
 import Style from "pages/feed/Style";
+import Feed from "pages/feed/Feed";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/style",
     element: <Style />,
+  },
+  {
+    path: "/feed",
+    element: <Feed />,
   },
 ]);
 

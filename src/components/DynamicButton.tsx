@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { DynamicButtonProps } from "../types/components";
 
-const DynamicButton = ({ text, className = "" }: DynamicButtonProps) => {
+const DynamicButton = ({ text, image, className = "" }: DynamicButtonProps) => {
   return (
     <button
       className={`bg-button-color font-size-14 justify-center items-center text-Mono-Navy px-4 py-2 rounded-lg font-medium flex text-center ${className}`}
