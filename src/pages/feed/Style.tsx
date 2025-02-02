@@ -59,8 +59,8 @@ const Style = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-login-button flex flex-col h-full relative">
-      <div className="overflow-y-auto pb-[80px] bg-login-button">
+    <div className="bg-gray-03 flex flex-col h-full relative">
+      <div className="overflow-y-auto pb-[80px] bg-gray-03">
         <Header
           leftText="Style"
           rightText="Feed"

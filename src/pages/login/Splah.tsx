@@ -14,7 +14,7 @@ const Splash = () => {
   }, [navigate]);
 
   return (
-    <div className="bg-splash h-screen flex flex-col justify-center items-center px-4">
+    <div className="bg-gray-01 h-screen flex flex-col justify-center items-center px-4">
       <img src={Logo} alt="Logo" className="w-60 h-26 m-auto" />
       <div className="button_center w-full flex justify-center mt-4"></div>
     </div>

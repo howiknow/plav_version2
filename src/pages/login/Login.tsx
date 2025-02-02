@@ -31,7 +31,7 @@ const Login = () => {
       </Swiper>
       <div className="absolute bottom-0 w-full px-5 pb-16 z-10 mb-[55px]">
         <button
-          className="text-base leading-relaxed font-Pretendard font-bold bg-login-button w-full rounded-[27px] py-3.5 shadow-drop-shadow text-button-font"
+          className="text-base leading-relaxed font-Pretendard font-bold bg-login-button w-full rounded-[27px] py-3.5 shadow-drop-shadow text-gray-01"
           onClick={() => {
             navigate("/login/auth");
           }}

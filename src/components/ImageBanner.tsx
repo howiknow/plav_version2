@@ -7,11 +7,11 @@ interface ImageBannerProps {
 
 const ImageBanner = ({ images }: ImageBannerProps) => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-[84px] mb-4">
       <Swiper
         spaceBetween={12}
         slidesPerView="auto"
-        className="w-full h-full"
+        className="w-full h-full !swiper-h"
         loop={true}
         autoplay={{
           delay: 3000,
@@ -19,9 +19,9 @@ const ImageBanner = ({ images }: ImageBannerProps) => {
         }}
       >
         {images.map((item, index) => (
-          <SwiperSlide key={index} className="!w-auto">
+          <SwiperSlide key={index} className="!w-auto h-[84px] pl-2 pt-2">
             <button
-              className="rounded-lg overflow-hidden pl-2 pt-2"
+              className="rounded-lg overflow-hidden h-full"
               onClick={() => {
                 console.log(`Banner ${index + 1} clicked`);
               }}

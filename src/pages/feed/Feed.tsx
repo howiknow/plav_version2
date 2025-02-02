@@ -7,6 +7,7 @@ import Banner3 from "../../assets/image/Banner3.png";
 import Banner4 from "../../assets/image/Banner4.png";
 import Banner5 from "../../assets/image/Banner5.png";
 import ImageBanner from "../../components/ImageBanner";
+import Card from "components/Card";
 
 const Feed = () => {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ const Feed = () => {
   ];
 
   return (
-    <div className="bg-login-button flex flex-col h-full relative">
+    <div className="bg-gray-03 flex flex-col h-full ">
       <div className="overflow-y-auto pb-[80px] bg-login-button">
         <Header
           leftText="Style"
@@ -29,10 +30,11 @@ const Feed = () => {
           onLeftClick={() => navigate("/style")}
           onRightClick={() => {}}
         />
-        <p className="text-splash px-4 font-bold font-size-14">
+        <p className="text-gray-01 px-4 font-bold font-size-14">
           지금 많이 검색중인 아이템
         </p>
         <ImageBanner images={bannerImages} />
+        <Card />
       </div>
       <Footer />
     </div>
